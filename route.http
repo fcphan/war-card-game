@@ -1,0 +1,25 @@
+GET http://localhost:5000/scoreboard HTTP/1.1
+
+###
+
+GET http://localhost:5000/scoreboard/630fccb9fcc031c1a24bd448 HTTP/1.1
+
+###
+
+POST http://localhost:5000/scoreboard
+Content-Type: application/json
+
+{
+  "name": "John",
+  "wins": 1
+}
+
+###
+
+PATCH http://localhost:5000/scoreboard/update/Jack
+Content-Type: application/json
+
+{
+  "name": "Jack",
+  "wins": 1
+}
